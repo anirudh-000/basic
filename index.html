@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Basic</title>
+  </head>
+
+  <body class="container">
+
+    <!----------------------------------------------------------------------------------- Header -->
+    <header class="header ">
+
+      <!--- Logo -->
+      <a href="#" class="header__logo">
+
+        <!--- Logo Light -->
+        <img loading="lazy" 
+            class="logo-light" 
+            src="images/header/logo-light.svg" 
+            alt="Light version of logo"
+        >
+      
+        <!--- Logo Dark -->
+        <img loading="lazy" 
+          class="logo-dark" 
+          src="images/header/logo-dark.svg" 
+          alt="Dark version of logo"
+        >
+      </a>
+
+      <!--  Navigation -->
+      <nav class="header__nav">
+        <ul class="header__nav--links">
+          <li class="header__nav--links__link"><a href="#">Home</a></li>
+          <li class="header__nav--links__link"><a href="#">Features</a></li>
+          <li class="header__nav--links__link"><a href="#">About</a></li>
+          <li class="header__nav--links__link"><a href="#">Why</a></li>
+          <li class="header__nav--links__link"><a href="#">Team</a></li>
+          <li class="header__nav--links__link"><a href="#">Testimonials</a></li>          
+          <li class="header__nav--links__link"><a href="#">Blog</a></li>
+          <li class="header__nav--links__link"><a href="#">Newsletter</a></li>
+        </ul>
+      </nav>
+
+      <!--  Hamburger Menu -->
+      <div class="hamburger">
+        <div class="hamburger-lines"></div>
+        <div class="hamburger-lines"></div>
+        <div class="hamburger-lines"></div>
+      </div>
+    </header>
+    
+    <!----------------------------------------------------------------------------------- Hero -->
+    <section class="hero">
+
+      <!-- Main Title -->
+      <h1 class="hero__title">
+        Basic - SaaS Landing Page <div>Lickstar Your SaaS or App Site</div>
+      </h1>
+
+      <!-- Main- Para-->
+      <p class="hero__para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, iste!
+      </p>
+
+      <!-- Link -->
+      <a href="#" class="hero__link">Get Started</a>
+
+      <!-- Image -->
+      <div class="hero__img">
+        <img
+          loading="lazy"
+          src="images/showcase/hero-img.png" alt="The image of a laptop"
+        />
+      </div>
+    </section>
+    
+    <!----------------------------------------------------------------------------------- features -->
+    <section class="features section__padding">      
+      <!-- Title -->
+      <h2 class="features__title section__title">
+          <span>Clean and simple design,</span>
+         Comes with everything you need to get started
+      </h2>
+
+      <!-- Feature Cards -->
+      <div class="features__cards">
+        <!-- Card 1 -->
+        <div class="features__cards--card-1 features__card">
+          <!-- Icons -->
+          <div class="features__cards--card-1__icons features__card--icons">
+            <img 
+              loading="lazy"
+              src="images/features/main-shape.svg" 
+              alt="triangle with rounded corners"
+            >
+
+            <img 
+              loading="lazy" 
+              src="images/features/shape-1.svg" 
+              alt="triangle with rounded corners"
+            >
+
+            <i class="fa-solid fa-crop"></i>
+          </div>
+
+          <!-- Title -->
+          <h3 class="features__cards--card-1__title features__card--title">
+            Clean
+          </h3>
+
+          <!-- Para -->
+          <p class="features__cards--card-1__para features__card--para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Molestias minus inventore  
+          </p>
+
+          <!-- Link -->
+          <a href="#" class="features__cards--card-1__link features__card--link section__sub-link">
+            <span>Learn More</span> <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="features__cards--card-2 features__card">
+          <!-- Icons -->
+          <div class="features__cards--card-2__icons features__card--icons">
+            <img 
+              loading="lazy"
+              src="images/features/main-shape.svg" 
+              alt="triangle with rounded corners"
+            >
+
+            <img 
+              loading="lazy" 
+              src="images/features/shape-2.svg" 
+              alt="triangle with rounded corners"
+            >
+
+            <i class="fa-solid fa-gear"></i>
+          </div>
+
+          <!-- Title -->
+          <h3 class="features__cards--card-2__title features__card--title">
+            Robust
+          </h3>
+
+          <!-- Para -->
+          <p class="features__cards--card-2__para features__card--para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Molestias minus inventore  
+          </p>
+
+          <!-- Link -->
+          <a href="#" class="features__cards--card-2__link features__card--link section__sub-link">
+            <span>Learn More</span> <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+         <!-- Card 3 -->
+         <div class="features__cards--card-3 features__card">
+          <!-- Icons -->
+          <div class="features__cards--card-3__icons features__card--icons">
+            <img 
+              loading="lazy"
+              src="images/features/main-shape.svg" 
+              alt="triangle with rounded corners"
+            >
+
+            <img 
+              loading="lazy" 
+              src="images/features/shape-3.svg" 
+              alt="triangle with rounded corners"
+            >
+
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+
+          <!-- Title -->
+          <h3 class="features__cards--card-3__title features__card--title">
+            Robust
+          </h3>
+
+          <!-- Para -->
+          <p class="features__cards--card3__para features__card--para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Molestias minus inventore  
+          </p>
+
+          <!-- Link -->
+          <a href="#" class="features__cards--card-3__link features__card--link section__sub-link">
+            <span>Learn More</span> <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!----------------------------------------------------------------------------------- about -->
+    <section class="about"></section>
+    
+    <!----------------------------------------------------------------------------------- why -->
+    <section class="why"></section>
+    
+    <!----------------------------------------------------------------------------------- team -->
+    <section class="team"></section>
+    
+    <!----------------------------------------------------------------------------------- testimonials -->
+    <section class="testimonial"></section>
+    
+    <!----------------------------------------------------------------------------------- blog -->
+    <section class="blog"></section>
+    
+    <!----------------------------------------------------------------------------------- footer -->
+    <footer class="footer">
+
+    </footer>
+
+
+    <!-- ------------------------------------------------------------ JavaScript Files -->
+    <!-- Swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>  
+    <script src="app.js"></script>
+  </body>
+</html>
