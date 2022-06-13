@@ -366,10 +366,78 @@ li {
  
 .features {
   grid-column: container-start / container-end;
+
+  display:flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
+/* .features title {
+  z-index: -1;
+} */
 
+.features__title::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
 
+.features__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: calc(1rem + 2vw);
+}
+
+.features__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 6rem 3rem;
+  box-shadow: 0 5px 30px 0 rgba(167, 167, 167, 0.16);
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.features__card:hover {
+  border: 1px solid var(--color-tertiary-3);
+}
+
+.features__card:hover .features__card--icons img:first-child {
+  transform: rotate(25deg);
+}
+
+.features__card--icons {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.features__card--icons img,
+.features__card--icons i {
+  grid-column: 1/ -1;
+  grid-row: 1/ -1;
+}
+
+.features__card--icons img:first-child {
+  transition: all 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
+  z-index: -1;
+}
+
+.features__card--icons i {
+  font-size: var(--font-size-st-l);
+  color: var(--color-primary); 
+}
+
+.features__card--title {
+  font-size: var(--font-size-st-mc);
+  font-weight: 900;
+}
+
+.features__card--para {
+  text-align: center; 
+}
 
 /* ------------------------------------------------------------------------------- */
 /* ------------------------------------------ Media Queries 
@@ -407,6 +475,16 @@ li {
 
   .hero__img {
     width: 80%;
+  }
+
+  /*----------*----------*----------*----------*---------- section padding ----------*----------*----------*----------*/
+  .section__padding {
+    padding: var(--padding-xl-v);
+  }
+
+  /*----------*----------*----------*----------*---------- section title ----------*----------*----------*----------*/
+  .section__title {
+    font-size: 2.8rem;
   }
 
 }
@@ -536,4 +614,16 @@ li {
     .hero__img {
       width: 100%;
     }
+}
+
+@media screen and(max-width: 500px) {
+  /*----------*----------*----------*----------*---------- features ----------*----------*----------*----------*/
+  .features__cards {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem 0;
+  }
+
+  .features__card {
+    padding: 3rem 1.5rem; 
+  }
 }
